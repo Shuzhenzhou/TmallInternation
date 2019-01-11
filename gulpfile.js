@@ -17,6 +17,10 @@ gulp.task("copyHtml",function(){
 gulp.task("sever",function(){
 	connect.server({root:"dist",livereload:true })
 });
+gulp.task("copyFont",function(){
+	gulp.src("font/**")
+	.pipe(gulp.dest("dist/font"))
+});
 
 gulp.task("copyImgs",function(){
 	gulp.src("img/**")
@@ -31,7 +35,7 @@ gulp.task("sass",function(){
 	.pipe(gulp.dest("dist/css"))
 });
 gulp.task("watch",function(){
-	gulp.watch(["*.html","img/**","sass/*.scss","js/*.js"],["copyHtml","copyImgs","sass","babel"]);
+	gulp.watch(["*.html","img/**","sass/*.scss","js/*.js","font/**"],["copyHtml","copyImgs","sass","babel","copyFont"]);
 	
 });
 

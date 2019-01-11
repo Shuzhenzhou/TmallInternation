@@ -1,0 +1,58 @@
+body,ul,li,h1,h2,h3,h4,p,input,button{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+i,em{
+    font-style: normal;
+}
+/*以上是重置样式*/
+$borderStyle:1px solid #cecece;
+.zcBox{
+    width:990px;
+    height: 340px;
+    margin: 0 auto;   
+    .box1{
+        width: 990px;
+        height: 46px;
+        border-bottom: 2px solid #e6e6e6;
+
+        ul{
+            margin: 0 auto;
+           height: 100%;
+           width: 720px;     
+           li{
+               float: left;
+               width: 150px;
+               height: 46px;
+               font-size: 16px;
+               font-weight: 700;
+               line-height: 46px;
+               color: #999;
+               padding-left: 30px;          
+               i{
+                  display: inline-block;
+                  height: 24px;
+                  width: 24px;
+                  color: #fff;
+                  background: #999;
+                  border-radius:50%;
+                  line-height: 23px;
+                  text-align: center;  
+               } 
+           }
+           .active{
+               border-bottom: 2px solid #f00;
+               i{
+                  background: #f00; 
+               }
+           }
+        }
+    }
+    .content{
+        width: 100%;
+    }
+    
+}
