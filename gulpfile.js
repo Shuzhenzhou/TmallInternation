@@ -1,0 +1,45 @@
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var sourcemaps = require("gulp-sourcemaps");
+var connect = require("gulp-connect");
+var concat = require("gulp-concat");//合并文件
+var uglify = require("gulp-uglify");//压缩文件
+var rename = require("gulp-rename");//重命名
+var babel = require("gulp-babel");//将ES6转换成ES5
+
+gulp.task("copyHtml",function(){
+	return gulp.src("*.html")
+	.pipe(gulp.dest("dist"))
+	.pipe(connect.reload());
+});
+
+
+gulp.task("sever",function(){
+	connect.server({root:"dist",livereload:true })
+});
+
+gulp.task("copyImgs",function(){
+	gulp.src("img/**")
+	.pipe(gulp.dest("dist/img"));
+});
+
+gulp.task("sass",function(){
+	gulp.src("sass/*.scss")
+	.pipe(sourcemaps.init())
+	.pipe(sass({outputStyle: 'compressed'}))
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest("dist/css"))
+});
+gulp.task("watch",function(){
+	gulp.watch(["*.html","img/**","sass/*.scss","js/*.js"],["copyHtml","copyImgs","sass","babel"]);
+	
+});
+
+gulp.task("babel",function(){
+	gulp.src("js/*.js")
+	.pipe(babel({"presets":["es2015"]}))
+	.pipe(uglify())
+	.pipe(gulp.dest("dist/js"))
+});
+
+gulp.task("default",["sever","watch"]);
