@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 955758 */
+  src: url("//at.alicdn.com/t/font_955758_fhfqw3eslq8.eot");
+  src: url("//at.alicdn.com/t/font_955758_fhfqw3eslq8.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_955758_fhfqw3eslq8.woff") format("woff"), url("//at.alicdn.com/t/font_955758_fhfqw3eslq8.ttf") format("truetype"), url("//at.alicdn.com/t/font_955758_fhfqw3eslq8.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  border: none; }
+
+body {
+  width: 100%;
+  height: 923px; }
+
+.logo {
+  height: 60px;
+  padding: 30px 0 0 70px; }
+  .logo img {
+    width: 180px;
+    height: 30px; }
+
+#banner {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: rgb(252, 48, 50);
+  img{
+      position: absolute;
+      width: 630px;
+      height: 440px;
+      top: 0px;
+      left: 362px;
+  }
+}
+
+#login1 {
+  
+  position: absolute;
+  width: 340px;
+  height: 395px;
+  top: 160px;
+  right: 60px;
+  background: #fff;
+  padding: 5px; }
+  #login1 #top {
+    height: 68px;
+    width: 340px; }
+    #login1 #top #left {
+      width: 290px;
+      height: 68px;
+      float: left; }
+      #login1 #top #left img {
+        margin-left: 145px;
+        margin-bottom: 10px; }
+      #login1 #top #left b {
+        margin-left: 25px;
+        font-size: 16px; }
+    #login1 #top #right {
+      float: right; }
+  #login1 #center {
+    width: 100%;
+    height: 175px;
+    padding-top: 40px; }
+    #login1 #center img {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      margin-bottom: 50px; }
+    #login1 #center em {
+      margin-left: 83px;
+      float: left;
+      font-size: 30px;
+      color: #ff0036;
+      margin-right: 10px; }
+    #login1 #center p {
+      color: #9c9c9c;
+      font-size: 12px; }
+      #login1 #center p b {
+        color: #ff0036; }
+  #login1 #bottom {
+    margin-top: 30px;
+    float: right;
+    margin-right: 34px; }
+    #login1 #bottom span {
+      font-size: 12px;
+      margin-right: 14px;
+      color: #6c6c6c;
+      cursor: pointer; }
+
+#login2 {
+  display: none;
+  position: absolute;
+  width: 340px;
+  height: 395px;
+  top: 160px;
+  right: 60px;
+  background: #fff;
+  padding: 5px; }
+  #login2 #top {
+    position: relative;
+    height: 68px;
+    width: 340px;
+    margin-bottom: 20px; }
+    #login2 #top #alert1 {
+      position: absolute;
+      display: none;
+      top: 59px;
+      left: 30px;
+      background: pink;
+      width: 200px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      padding: 0 10px; }
+    #login2 #top #alert2 {
+      position: absolute;
+      display: none;
+      top: 60px;
+      left: 30px;
+      background: pink;
+      width: 200px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      padding: 0 10px; }
+    #login2 #top #alert3 {
+      position: absolute;
+      display: none;
+      top: 136px;
+      left: 30px;
+      background: pink;
+      width: 200px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      padding: 0 10px; }
+    #login2 #top #alert4 {
+      position: absolute;
+      display: none;
+      top: 60px;
+      left: 30px;
+      background: pink;
+      width: 160px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      padding: 0 10px; }
+    #login2 #top #left {
+      width: 280px;
+      height: 68px;
+      float: left; }
+      #login2 #top #left img {
+        margin-left: 144px;
+        margin-bottom: 10px; }
+      #login2 #top #left b {
+        margin-left: 25px;
+        font-size: 16px; }
+    #login2 #top #right {
+      float: right; }
+  #login2 #user {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 0 auto; }
+    #login2 #user input {
+      width: 230px;
+      height: 20px;
+      padding: 10px;
+      border: none;
+      float: right; }
+    #login2 #user em {
+      background: #dddddd;
+      font-size: 38px;
+      color: #606060; }
+  #login2 #password {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: 35px; }
+    #login2 #password input {
+      width: 230px;
+      height: 20px;
+      padding: 10px;
+      border: none;
+      float: right; }
+    #login2 #password em {
+      background: #dddddd;
+      font-size: 38px;
+      color: #606060; }
+    #login2 #password #btn {
+      width: 300px;
+      height: 40px;
+      background: #ff0036;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 10px; }
+  #login2 #bottom {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px; }
+    #login2 #bottom a {
+      color: #6c6c6c; }
+    #login2 #bottom span {
+      margin-right: 10px; }
+
+footer {
+  width: 100%;
+  height: 185px;
+  font-size: 12px;
+  line-height: 30px; }
+  footer div {
+    margin: 50px 205px 0 65px; }

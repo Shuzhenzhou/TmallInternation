@@ -1,4 +1,4 @@
-body,ul,li,h1,h2,h3,h4,p,input,button{
+body,ul,li,h1,h2,h3,h4,p,input,button,form{
     margin: 0;
     padding: 0;
 }
@@ -8,9 +8,13 @@ li{
 i,em{
     font-style: normal;
 }
+strong,b{
+    font-weight: normal;
+}
 /*以上是重置样式*/
 $borderStyle:1px solid #cecece;
 .zcBox{
+    
     width:990px;
     height: 340px;
     margin: 0 auto;   
@@ -20,7 +24,7 @@ $borderStyle:1px solid #cecece;
         border-bottom: 2px solid #e6e6e6;
 
         ul{
-            margin: 0 auto;
+           margin: 0 auto;
            height: 100%;
            width: 720px;     
            li{
@@ -51,8 +55,353 @@ $borderStyle:1px solid #cecece;
            }
         }
     }
-    .content{
-        width: 100%;
-    }
     
+    .content{
+      
+        margin-top: 88px;
+        width: 809px;
+        height: 192px;
+        padding-left: 276px;
+        p{
+            margin-left: 10px;
+            font-size:12px ;
+            display: inline-block;
+            line-height: 35px;
+            color: #FF0000;
+           display: none;
+            i{
+                margin-right: 5px;
+               display: inline-block;
+               width: 17px;
+               height: 17px;
+               background: #FF0000;
+               line-height: 17px;
+               text-align: center;
+               border-radius: 50%;
+               color: #F5F2F0;
+            }
+        }
+            .conBox1{
+                
+                margin-right: 46px;
+                margin: 0 auto;
+                width: 720px;
+                height: 35px;
+                .region{
+                    position: relative;
+                    width: 160px;
+                    height: 33px;
+                    border:$borderStyle;
+                    display: inline-block;
+                    font-size: 14px;
+                    cursor:pointer;
+                    
+                    i{
+                        margin: 0 20px;
+                        line-height: 33px;
+                    }
+                    em{
+                        line-height: 33px;
+                        margin-left: 15px;
+                        font-weight: 700;
+                    }
+                    .areaList{
+                        position: absolute;
+                        height: 200px;
+                        top:34px;
+                        left: -1px;
+                        width: 162px;
+                        overflow: auto;
+                        background: #fff;
+                        border: $borderStyle;
+                        display: none;
+                        z-index: 999;
+                        li{
+                            width: 100%;
+                            height: 35px;
+                            font-size: 12px;
+                                           
+                            b{
+                                line-height: 35px;
+                                margin: 0 10px;
+                                
+                            }
+                            strong{
+                                float: right;
+                                line-height: 35px;
+                                margin: 0 10px;
+                                
+                            }
+                        }
+                        .active{
+                            background: #FF0000;
+                            b{
+                                color: #fff;
+                            }
+                           strong{
+                                color: #fff;
+                           }
+                        }
+                    }
+                }
+                span{
+                    margin-right: 26px;
+                    width: 48px;
+                    line-height: 35px;
+                    float: left;
+                }
+                div{
+                    float: left;
+                }
+                input{
+                    float: left;
+                    width: 156px;
+                    height: 31px;
+                    outline: none;
+                }
+            } 
+            .conBox2{
+                margin: 0 auto;
+                margin-top: 26px;
+                width: 720px;
+                height: 35px;
+                span{
+                    margin-right: 26px;
+                    width: 48px;
+                    text-align: right;
+                    float: left;
+                    line-height: 35px;
+                }
+                .huakuai{
+                    position: relative;
+                    float: left;
+                    width: 300px;
+                    height: 34px;
+                    background: #e8e8e8;
+                    .lvtiao{
+                        height: 34px;
+                        
+                        background: #7ac23c;
+                    }
+                    strong{
+                        display: inline-block;
+                        position: relative;
+                        margin-left: 25%;
+                        font-size: 12px;
+                        line-height: 34px;
+                        text-align: center;
+                        .liang{
+                            position: absolute;
+                            top:12px;
+                            left: 0;
+                            height: 10px;
+                            width: 5px;
+                            background: #FFF;
+                            opacity: 0.8;
+                            
+                        }
+                    }
+                    i{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: inline-block;
+                        width: 40px;
+                        height: 32px;
+                        border: $borderStyle;
+                        background: #fff;
+                        text-align: center;
+                        line-height: 32px;
+                        &:hover{
+                            cursor:move;
+                        }
+                    }
+                }
+            }  
+            button{
+                margin: 40px 0 0 119px;
+                width: 180px;
+                height: 36px;
+                font-size: 14px;
+                text-align: center;
+                line-height: 36px;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                &:hover{
+                    background: #999;
+            }
+        }     
+    }
+    //手机验证页面
+    .sjyz{
+        display: none;
+        width: 680px;
+        height: 340px;
+        border: 2px solid #cecece;
+        border-top:2px solid #f00 ;
+        margin: 0 auto;
+        margin-top: 63px;
+        padding: 0 20px;
+        .top{
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            
+            h3{
+                float: left;
+            }
+            &>span{
+                font-weight:1000 ;
+                float: right;
+                color: #f00;
+                cursor:pointer;
+            }
+        }
+        .tishi{
+            font-size:12px ;
+            i{
+                display: inline-block;
+                width: 17px;
+                height: 17px;
+                background: #00bfff;
+                border-radius: 50%;
+                text-align: center;
+                color: #fff;
+                margin-right: 10px;
+            }
+        }
+        .yanzheng{
+            font-size:14px ;
+            margin-left: 192px;
+            .yz-1{
+                width: 100%;
+                height: 67px;
+                line-height: 67px;
+                span:first-child{
+                    margin-right: 27px;
+                }
+            }
+            .yz-2{
+                height: 93px;
+               .yz-2-1{
+                    display: inline-block;
+                    height: 67px;
+                    line-height: 67px;
+                    span{
+                        margin-right: 27px;
+                    }
+                    input{
+                        width: 110px;
+                        height: 36px;
+                        outline: none;
+                    }
+                }
+                .yz-2-2{
+                    display: inline-block;
+                    width: 110px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    border: $borderStyle;
+                    background: #d0d0d0;
+                    color: #fff;
+                    border-radius: 5px;
+                   
+                }
+                p{
+                        font-size: 14px;
+                        span{
+                            
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: #fff;
+                            background: #6bc827;
+                        }
+                    } 
+            }
+          
+            button{
+                height: 45px;
+                width: 110px;
+                background: #ff0036;
+                border: none;
+                outline: none;
+                margin-left: 71px;
+                border-radius:10px;
+                color: #fff;
+                div{
+                    line-height: 50px;
+                }
+            }
+            
+        }
+        
+        
+    }//sjyz的
+    
+    .tianxieXX{
+       display: none;
+        width: 400px;
+        height: 300px;
+        margin: 50px auto;
+        border: 1px solid #f00;
+        padding: 50px 50px;
+        position: relative;
+        div{
+            height: 50px;
+            span{
+                font-size:12px ;
+                color: #f00;
+                display: none;
+            }
+        }
+        button{
+            position: absolute;
+            left: 225px;
+            width: 50px;
+            height: 30px;
+        }
+    }//填写用户名
+    
+    
+    .zhuceOk{
+        display: none;
+        margin: 50px auto;
+        width: 200px;
+        height: 200px;
+        padding: 50px 50px;
+        text-align: center;
+        border: 1px solid #f00;
+        position: relative;
+        a{
+            display: block;
+            width: 80px;
+            height: 40px;
+            text-decoration:none;
+            color: green;
+            background: #f00;
+            line-height: 40px;
+            position: absolute;
+            left: 110px;
+            top:206px;
+            border-radius: 5px;
+        }
+        p{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 48px;
+            top:100px;
+            left: 124px;
+            border-radius: 50%;
+            color: #fff;
+            background: greenyellow;
+        }
+        
+    }
 }
